@@ -5,7 +5,7 @@ adop-java-jenkins-slave:
   net: ${CUSTOM_NETWORK_NAME}
   privileged: true
   environment:
-    SLAVE_LABELS: $(JAVA_SLAVE_NAME)
+    SLAVE_LABELS: "java8"
     SWARM_PASSWORD: ${SWARM_PASSWORD}
     SLAVE_EXECUTORS: ${SLAVE_EXECUTORS}
     INITIAL_ADMIN_USER: ${INITIAL_ADMIN_USER}
