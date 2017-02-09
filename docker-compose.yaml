@@ -1,0 +1,12 @@
+adop-java-jenkins-slave:
+  container_name: $(SLAVE_NAME)
+  restart: always
+  image: janhout/adop-java-jenkins-slave:0.0.1
+  net: ${CUSTOM_NETWORK_NAME}
+  privileged: true
+  environment:
+    SLAVE_LABELS: $(SLAVE_NAME)
+    SWARM_PASSWORD: ${PASSWORD_JENKINS}
+    SLAVE_EXECUTORS: ${SLAVE_EXECUTORS}
+    INITIAL_ADMIN_USER: ${INITIAL_ADMIN_USER}
+    INITIAL_ADMIN_PASSWORD: ${INITIAL_ADMIN_PASSWORD_PLAIN}
