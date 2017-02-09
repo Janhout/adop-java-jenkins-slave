@@ -1,4 +1,4 @@
-adop-java-jenkins-slave:
+adop-java-slave:
   container_name: $(JAVA_SLAVE_NAME)
   restart: always
   image: janhout/adop-java-jenkins-slave:0.0.1
