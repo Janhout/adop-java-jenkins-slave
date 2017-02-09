@@ -1,6 +1,6 @@
-# Environment Template Repository
+# Slave Template Repository
 
-This repository is used by [adop-cartridge-java](https://github.com/Accenture/adop-cartridge-java) to create the environments using the docker compose.
+This repository is used by [adop-cartridge-java](https://github.com/Accenture/adop-cartridge-java) to create the slave using the docker compose.
 
 # License
 Please view [license information](LICENSE.md) for the software contained on this image.
