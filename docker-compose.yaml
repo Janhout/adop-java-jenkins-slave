@@ -1,11 +1,11 @@
 adop-java-slave:
-  container_name: $(JAVA_SLAVE_NAME)
+  container_name: ${JAVA_SLAVE_NAME}
   restart: always
   image: janhout/adop-java-jenkins-slave:0.0.1
   net: ${CUSTOM_NETWORK_NAME}
   privileged: true
   environment:
-    SLAVE_NAME: $(JAVA_SLAVE_NAME)
-    SLAVE_LABELS: $(JAVA_SLAVE_NAME)
+    SLAVE_NAME: ${JAVA_SLAVE_NAME}
+    SLAVE_LABELS: ${JAVA_SLAVE_NAME}
     SWARM_PASSWORD: ${SWARM_PASSWORD}
     SLAVE_EXECUTORS: ${SLAVE_EXECUTORS}
